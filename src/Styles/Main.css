@@ -33,10 +33,41 @@ background-color: #1ee671;
   to { transform: rotate(360deg); }
 }
 
+.Navbar {
+  height: 50px;
+  box-shadow: 0 0 10px 2px rgba(0,0,0,.2);
+  font-family: "Helvetica Neue",HelveticaNeue,"TeX Gyre Heros",TeXGyreHeros,FreeSans,"Nimbus Sans L","Liberation Sans",Arimo,Helvetica,Arial,sans-serif;
+}
+
+.Navbar .navbar-brand {
+  font-size: 30px;
+}
+
+.Navbar .Login a {
+  color: #1c92d2;
+  font-size: 15px;
+}
+
+.Navbar .Signup a {
+  color: #1ee671;
+  font-size: 15px;  
+}
+
 .Herowrapper {
   background-image: linear-gradient(#1c92d2, white);
+  height: 320px;
 }
 
 .Faqwrapper {
   background-color: #1c92d2;
+  height: 1050px;
+}
+
+.Tryitwrapper {
+  height: 300px;
+}
+
+.Footer {
+  height: 250px;
+  text-align: left;
 }
