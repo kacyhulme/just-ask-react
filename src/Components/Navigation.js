@@ -17,25 +17,7 @@ export default class Navigation extends React.Component {
   render() {
     return (
         <div>
-         <Navbar color="faded" light expand="md">
-               <NavbarBrand href="/">
-                just ask.io
-            </NavbarBrand>
-
-            <Nav className="ml-auto" navbar>
-                <NavItem>
-                    <Link to="/login">Log In</Link>
-                </NavItem>
-            </Nav>
-
-            <Nav className="mr-auto" navbar>
-              <NavItem>
-                    <Link to="/signup">Sign Up</Link>
-                </NavItem>
-            </Nav>
-        </Navbar>
-        <Route path="/login" component={Login} />
-        <Route path="/signup" component={Signup} />
+         WORDSSSSS
         </div>
     );
   }
