@@ -71,3 +71,20 @@ background-color: #1ee671;
   height: 250px;
   text-align: left;
 }
+
+.Chatwizard {
+  min-height: 200px;
+}
+
+.Questionwrapper {
+  border: 1px solid black;
+  width: 300px;
+  margin: auto;
+}
+
+
+
+
+
+
+

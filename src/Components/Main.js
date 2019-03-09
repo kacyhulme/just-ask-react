@@ -3,7 +3,7 @@ import '../Styles/Main.css';
 import Navigation from './Navigation';
 import Footer from './Footer';
 import Login from './Login';
-import Signup from './Signup';
+import SignupWizard from './SignupWizard';
 import Home from './Home';
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -43,7 +43,7 @@ class Main extends Component {
 
         <Route exact path="/" component={Home} />
         <Route path="/login" component={Login} />
-        <Route path="/signup" component={Signup} />
+        <Route path="/signup" component={SignupWizard} />
 
 
 

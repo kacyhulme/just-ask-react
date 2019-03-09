@@ -1,6 +1,6 @@
 import React from 'react';
 import Login from './Login';
-import Signup from './Signup';
+import SignupWizard from './SignupWizard';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import {
   Collapse,
