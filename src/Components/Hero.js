@@ -5,8 +5,8 @@ import { Container, Row, Col } from 'reactstrap';
 
 class Main extends Component {
   render() {
-    const tryitbutton= 'try it now';
-
+    const tryitbutton = 'try it now';
+    
     return (
       <div className="Herowrapper">
        <Container>
