@@ -4,7 +4,6 @@ import WizardQuestions from './WizardQuestions';
 class SignupWizard extends Component {
   constructor(props) {
     super(props);
-    this.state
     this.state = {
         data: 
         [{
@@ -40,60 +39,52 @@ class SignupWizard extends Component {
     const target = e.target;
     const id = target.name;
     const answer = e.target.value
+    const completed = true;
 
     this.state.data.filter(function(each){
       if(each.id == id) {
         each.answer = answer; 
+        each.isCompleted = completed;
       }
     })
 
     this.setState({ 
-      answer: answer 
+      answer: answer,
+      isCompleted: completed 
     });
   };
   
   handleSubmit = e => {
     //alert('A name was submitted: ' + this.state.name);
+    debugger
     e.preventDefault();
   }
 
   render() {
 
     const data = this.state.data.map((data, key) =>
-        
-        <div className="Questionwrapper">
-          <form onSubmit={this.handleSubmit}>
-            <p>{ data.question }</p>
-            <input 
-            key={ data.id }
-            type="text" 
-            name={ data.id }
-            onChange={ this.handleAnswerInput }>
-            </input>
-            <input type="submit" value="Submit" />
-          </form>
-        </div>
+            <div className="Question">
+              <p>{ data.question }</p>
+              <input 
+                key={ data.id }
+                type="text" 
+                name={ data.id }
+                onChange={ this.handleAnswerInput }>
+              </input>
+            </div>  
     );
 
     return (
         <div className="Chatwizard">
           <div>Chat wizard </div>
-          {/*<form onSubmit={this.handleSubmit}>
-            <input 
-            type="text" 
-            value={this.state.name}
-            onChange={ this.handleAnswerInput }>
-            </input>
-            <input type="submit" value="Submit" />
-          </form>*/}
-          <div>
-
-            { this.state.name }
-
+         
+          <div className="Questionwrapper">
+            <form onSubmit={this.handleSubmit}>
+              { data }
+            </form>
+            <input type="submit" value="Submit" /> 
           </div>
-
-            { data }
-
+        
         </div>
     );
   }
