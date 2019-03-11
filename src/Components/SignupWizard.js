@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import WizardQuestions from './WizardQuestions';
 
 class SignupWizard extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+  state = {
+      currentStep: 1,
         data: 
         [{
         id: 1,
@@ -33,7 +32,8 @@ class SignupWizard extends Component {
         }],
         name: "Greta"
       };
-  }
+  
+
 
   handleAnswerInput = e => {
     const target = e.target;
@@ -50,23 +50,24 @@ class SignupWizard extends Component {
 
     this.setState({ 
       answer: answer,
-      isCompleted: completed 
+      isCompleted: completed ,
+      currentStep: this.state.currentStep++
     });
   };
   
   handleSubmit = e => {
-    //alert('A name was submitted: ' + this.state.name);
-    debugger
+    this.setState({ 
+      currentStep: this.state.currentStep + 1
+    });
     e.preventDefault();
   }
 
   render() {
 
     const data = this.state.data.map((data, key) =>
-            <div className="Question">
+            <div key={data.id} className="Question" style={{display: (this.state.currentStep === data.id ? 'block': 'none')}}>
               <p>{ data.question }</p>
               <input 
-                key={ data.id }
                 type="text" 
                 name={ data.id }
                 onChange={ this.handleAnswerInput }>
@@ -81,8 +82,9 @@ class SignupWizard extends Component {
           <div className="Questionwrapper">
             <form onSubmit={this.handleSubmit}>
               { data }
-            </form>
+
             <input type="submit" value="Submit" /> 
+            </form>
           </div>
         
         </div>
