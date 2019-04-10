@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import WizardQuestions from './WizardQuestions';
+import SignupWizardQuestions from './SignupWizardQuestions';
 
 class SignupWizard extends Component {
   state = {
@@ -81,7 +81,8 @@ class SignupWizard extends Component {
          
           <div className="Questionwrapper">
             <form onSubmit={this.handleSubmit}>
-              { data }
+              
+              <SignupWizardQuestions questions= { data }/>
 
             <input type="submit" value="Submit" /> 
             </form>
