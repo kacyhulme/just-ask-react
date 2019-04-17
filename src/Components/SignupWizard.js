@@ -50,22 +50,31 @@ class SignupWizard extends Component {
 
     this.setState({ 
       answer: answer,
-      isCompleted: completed ,
+      isCompleted: completed,
       currentStep: this.state.currentStep++
     });
   };
   
   handleSubmit = e => {
-    this.setState({ 
-      currentStep: this.state.currentStep + 1
-    });
-    e.preventDefault();
+    if(this.state.currentStep === 4) {
+      //need to decide what to do when person is done answering all the questions here
+      this.setState({ 
+        currentStep: 1,
+        answer: null,
+        isCompleted: false
+      })
+    } else {
+      this.setState({ 
+        currentStep: this.state.currentStep + 1
+      });
+      e.preventDefault();  
+    }
   }
 
   render() {
 
     const data = this.state.data.map((data, key) =>
-            <div key={data.id} className="Question" style={{display: (this.state.currentStep === data.id ? 'block': 'none')}}>
+            <div key={data.id} className="Question" style={{display: (this.state.currentStep >= data.id ? 'block': 'none')}}>
               <p>{ data.question }</p>
               <input 
                 type="text" 

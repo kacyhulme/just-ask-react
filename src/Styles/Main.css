@@ -16,11 +16,11 @@
   font-weight: 400;
   display: inline-block;
   cursor: pointer;
-  padding: 0 32px;
+  padding: .5em 32px;
   font-size: 18px;
-  line-height: 50px;
   border-radius: 3px;
-  height: 50px;
+  max-height: 50px;
+  min-height: 50px;
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -30,7 +30,7 @@
 }
 
 .navbar {
-  height: 75px;
+  max-height: 75px;
   box-shadow: 0 0 10px 2px rgba(0,0,0,.2);
   font-family: "Helvetica Neue",HelveticaNeue,"TeX Gyre Heros",TeXGyreHeros,FreeSans,"Nimbus Sans L","Liberation Sans",Arimo,Helvetica,Arial,sans-serif;
 }
@@ -59,26 +59,29 @@
 }
 
 .herowrapper {
-  background-image: linear-gradient(#4E0250, white);
-  height: 320px;
+  background-image: linear-gradient(white,#4E0250);
+  max-height: 320px;
+  padding: 20px;
 }
 
 .faqwrapper {
   background-color: #4E0250;
-  height: 1050px;
+  max-height: 320px;
+  padding: 20px;
 }
 
-.tryitwrapper {
-  height: 300px;
+.tryitnowwrapper {
+  max-height: 520px;
+  padding: 20px;
 }
 
 .footer {
-  height: 250px;
-  text-align: left;
+  max-height: 150px;
+  padding: 20px;
 }
 
 .chatwizard {
-  min-height: 200px;
+  min-max-height: 200px;
 }
 
 .questionwrapper {

@@ -8,7 +8,7 @@ class Main extends Component {
     const otherbutton = 'some other text';
 
     return (
-    <div>
+    <div className="tryitnowwrapper">
       <Container>
         <Button buttontext={otherbutton}/>
         <Row>
