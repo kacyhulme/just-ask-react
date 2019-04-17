@@ -76,10 +76,10 @@ class SignupWizard extends Component {
     );
 
     return (
-        <div className="Chatwizard">
+        <div className="chatwizard">
           <div>Chat wizard </div>
          
-          <div className="Questionwrapper">
+          <div className="questionwrapper">
             <form onSubmit={this.handleSubmit}>
               
               <SignupWizardQuestions questions= { data }/>

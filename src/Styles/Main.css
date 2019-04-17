@@ -1,95 +1,100 @@
 /*component specific styles*/
+/*color variables
+#4E0250 //dark purple
+#801A86 //bright purple
+#cdc8db //super light purple 
+#8FE388 //light bright green
+#58BC82 //medium green
+*/
 
-.Button {
-background-color: #1ee671;
+
+.buttonstyle a {
+  background-color: #8FE388;
+  color: white;
+  letter-spacing: .25px;
+  text-align: center;
+  font-weight: 400;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0 32px;
+  font-size: 18px;
+  line-height: 50px;
+  border-radius: 3px;
+  height: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.Main {
+.main {
   text-align: center;
 }
 
-.Main-logo {
-  animation: Main-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.Main-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.Main-title {
-  font-size: 1.5em;
-}
-
-.Main-intro {
-  font-size: large;
-}
-
-@keyframes Main-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-.Navbar {
-  height: 50px;
+.navbar {
+  height: 75px;
   box-shadow: 0 0 10px 2px rgba(0,0,0,.2);
   font-family: "Helvetica Neue",HelveticaNeue,"TeX Gyre Heros",TeXGyreHeros,FreeSans,"Nimbus Sans L","Liberation Sans",Arimo,Helvetica,Arial,sans-serif;
 }
 
-.Navbar .navbar-brand {
+.navbar .navbar-brand {
   font-size: 30px;
 }
 
-.Navbar .Login a {
-  color: #1c92d2;
+.login a {
+  color: #58BC82;
   font-size: 15px;
 }
 
-.Navbar .Signup a {
-  color: #1ee671;
+.signup.nav-item {
+  border-radius: 3px;
+  color: #fff;
+  padding: .2em 1em .3em;
+  margin-left: 1em;
+}
+.signup a {
+  background-color: #58BC82;
+  color: white;
   font-size: 15px;  
+  border-radius: 3px;
+  padding: .5em 1em;
 }
 
-.Herowrapper {
-  background-image: linear-gradient(#1c92d2, white);
+.herowrapper {
+  background-image: linear-gradient(#4E0250, white);
   height: 320px;
 }
 
-.Faqwrapper {
-  background-color: #1c92d2;
+.faqwrapper {
+  background-color: #4E0250;
   height: 1050px;
 }
 
-.Tryitwrapper {
+.tryitwrapper {
   height: 300px;
 }
 
-.Footer {
+.footer {
   height: 250px;
   text-align: left;
 }
 
-.Chatwizard {
+.chatwizard {
   min-height: 200px;
 }
 
-.Questionwrapper {
+.questionwrapper {
   border: 1px solid black;
   width: 300px;
   margin: auto;
   padding: 15px;
 }
 
-.Question {
+.question {
   border: 1px solid black;
   border-radius: 4px;
   margin-bottom: 10px;
 }
 
-.Question input {
+.question input {
   margin-bottom: 10px;
 }
 

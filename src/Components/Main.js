@@ -21,18 +21,18 @@ class Main extends Component {
   render() {
     return (
       <Router>
-        <div className="Main">
+        <div className="main">
           <Navbar color="faded" light expand="md">
             <NavbarBrand href="/">just ask.io</NavbarBrand>
 
             <Nav className="ml-auto" navbar>
-              <NavItem className="Login">
+              <NavItem className="login">
                 <Link to="/login">Log In</Link>
               </NavItem>
             </Nav>
 
             <Nav navbar>
-              <NavItem className="Signup">
+              <NavItem className="signup">
                 <Link to="/signup">Sign Up</Link>
               </NavItem>
             </Nav>

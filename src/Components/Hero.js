@@ -8,7 +8,7 @@ class Main extends Component {
     const tryitbutton = 'try it now';
     
     return (
-      <div className="Herowrapper">
+      <div className="herowrapper">
        <Container>
         <Row>
           <Col md="12">
