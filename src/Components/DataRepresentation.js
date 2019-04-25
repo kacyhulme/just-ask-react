@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import d3 from 'd3';
 
-// trying to use d3 here
-  
+class DataRepresentation extends Component {    
+    render() {
         return (
             <div className="datarepresentation">
                 <div>Data Representation</div>
