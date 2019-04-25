@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Login from "./Login";
 import SignupWizard from "./SignupWizard";
 import Home from "./Home";
+import DataRepresentation from "./DataRepresentation";
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import {
@@ -41,6 +42,7 @@ class Main extends Component {
           <Route exact path="/" component={Home} />
           <Route path="/login" component={Login} />
           <Route path="/signup" component={SignupWizard} />
+          <Route path="/datarepresentation" component={DataRepresentation} />
 
           <Footer />
         </div>
