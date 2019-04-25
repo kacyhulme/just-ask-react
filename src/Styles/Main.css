@@ -1,28 +1,35 @@
 /*component specific styles*/
 /*color variables
-#4E0250 //dark purple
-#801A86 //bright purple
-#cdc8db //super light purple 
-#8FE388 //light bright green
-#58BC82 //medium green
+
+#a65eaa //bright purple
+#63aa5e //green
+#4e8b4a //darker green
+rgb(245,245,245); // light grey
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat', sans-serif;
+
 */
 
 
 .buttonstyle a {
-  background-color: #8FE388;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #63aa5e;
   color: white;
   letter-spacing: .25px;
   text-align: center;
   font-weight: 400;
   display: inline-block;
   cursor: pointer;
-  padding: .5em 32px;
+  padding: .6em 32px;
   font-size: 18px;
   border-radius: 3px;
   max-height: 50px;
   min-height: 50px;
   margin-top: 40px;
   margin-bottom: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .main {
@@ -32,16 +39,19 @@
 .navbar {
   max-height: 75px;
   box-shadow: 0 0 10px 2px rgba(0,0,0,.2);
-  font-family: "Helvetica Neue",HelveticaNeue,"TeX Gyre Heros",TeXGyreHeros,FreeSans,"Nimbus Sans L","Liberation Sans",Arimo,Helvetica,Arial,sans-serif;
 }
 
 .navbar .navbar-brand {
   font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 .login a {
-  color: #58BC82;
+  color: #63aa5e;
   font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
 }
 
 .signup.nav-item {
@@ -51,48 +61,79 @@
   margin-left: 1em;
 }
 .signup a {
-  background-color: #58BC82;
+  background-color: #63aa5e;
   color: white;
   font-size: 15px;  
   border-radius: 3px;
   padding: .5em 1em;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+.signup a:hover {
+  background-color: #4e8b4a;
 }
 
 .herowrapper {
-  background-image: linear-gradient(white,#4E0250);
-  max-height: 320px;
-  padding: 20px;
+  max-height: 500px;
+  padding: 40px;
 }
 
-.faqwrapper {
-  background-color: #4E0250;
-  max-height: 320px;
-  padding: 20px;
+.herowrapper h1 {
+  margin-top: 50px;
+}
+
+.herowrapper .herobox {
+  padding: 55px 35px;
+  height: 300px;
 }
 
 .tryitnowwrapper {
-  max-height: 520px;
-  padding: 20px;
+  background-color: rgb(245,245,245);
+  max-height: 620px;
+  padding: 40px;
 }
 
+.tryitnowwrapper .tryitbox {
+  padding: 55px 35px;
+  height: 300px;
+}
+
+.faqwrapper {
+  max-height: 620px;
+  padding: 40px;
+}
+
+.faqwrapper h1 {
+  margin-top: 50px;
+}
 .footer {
+  background-color: rgb(245,245,245);
   max-height: 150px;
   padding: 20px;
 }
 
 .chatwizard {
-  min-max-height: 200px;
+  min-height: 800px;
+}
+
+.chatwizard h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .questionwrapper {
-  border: 1px solid black;
   width: 300px;
   margin: auto;
   padding: 15px;
 }
 
+.questionwrapper input {
+  border-radius: 4px;
+  padding: .6em 32px;
+}
+
 .question {
-  border: 1px solid black;
   border-radius: 4px;
   margin-bottom: 10px;
 }

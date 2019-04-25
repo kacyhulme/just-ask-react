@@ -5,19 +5,19 @@ import { Container, Row, Col } from 'reactstrap';
 
 class Main extends Component {
   render() {
-    const otherbutton = 'some other text';
+    const otherbutton = 'Send a Message';
 
     return (
     <div className="tryitnowwrapper">
       <Container>
         <Button buttontext={otherbutton}/>
         <Row>
-          <Col md="6">
+          <Col md="6" className="tryitbox">
             <p>Check up on family members and loved ones.</p>
             <p>Just Ask from Jen: Don't forget to buy flowers!</p>
             <p>I almost forgot!</p>
           </Col>
-          <Col md="6">
+          <Col md="6" className="tryitbox">
             <p>Remember appointments and encourage good habits!</p>
             <p>Running group at 6pm tonight!</p>
             <p>Yes!</p>

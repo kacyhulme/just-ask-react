@@ -1,12 +1,12 @@
 import React from 'react';
 import Button from './Button';
 
-const faqbutton = 'faq button';
+const faqbutton = 'Learn More';
 
 const Faq = props =>  {
     return (
         <div className="faqwrapper">
-        <div>Frequently Asked Questions</div>
+        <h1>Frequently Asked Questions</h1>
         <Button buttontext={faqbutton}/>
         </div>
         )

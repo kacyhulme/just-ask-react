@@ -42,7 +42,7 @@ class SignupWizard extends Component {
     const completed = true;
 
     this.state.data.filter(function(each){
-      if(each.id == id) {
+      if(each.id === id) {
         each.answer = answer; 
         each.isCompleted = completed;
       }
@@ -74,7 +74,7 @@ class SignupWizard extends Component {
   render() {
 
     const data = this.state.data.map((data, key) =>
-            <div key={data.id} className="Question" style={{display: (this.state.currentStep >= data.id ? 'block': 'none')}}>
+            <div key={data.id} className="question" style={{display: (this.state.currentStep >= data.id ? 'block': 'none')}}>
               <p>{ data.question }</p>
               <input 
                 type="text" 
@@ -86,14 +86,14 @@ class SignupWizard extends Component {
 
     return (
         <div className="chatwizard">
-          <div>Chat wizard </div>
+          <h1>Tell Us About You</h1>
          
           <div className="questionwrapper">
             <form onSubmit={this.handleSubmit}>
               
               <SignupWizardQuestions questions= { data }/>
 
-            <input type="submit" value="Submit" /> 
+            <input type="submit" value="Next Question" /> 
             </form>
           </div>
         
